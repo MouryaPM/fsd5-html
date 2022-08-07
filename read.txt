@@ -1,0 +1,84 @@
+html + css + javascript
+
+text(UI) + styling + interactions
+
+html - black / left aligned
+
+<filename>.html
+<filename>.css 
+<filename>.js 
+
+tag / elements - text,button, paragraphs , spaces,input box 
+
+syntax :
+<element name>
+
+paired tag/element
+<element>..................</element>
+
+single tag 
+<element ........... />
+
+<Element>
+
+comments - <!--  .......... -->
+
+1.doctype
+2.html 
+3.head 
+    - title 
+4.body
+    - heading - h1 - h6 
+    - paragraphs - p 
+    - image  - img 
+    - anchor - a 
+    - break line - br
+    - list 
+        - un-ordered list  - ul
+        - ordered list     - ol
+    - form 
+
+
+
+
+Assignment 1:
+1.Create a new folder - profilepage
+2.Git init 
+3.create index.html 
+
+below task should be in master branch
+
+1. Title: Portfolio Page 
+2. Add profile image to the page 
+3. Add your name as heading
+4. Write a paragraph about you
+5. List your favorite sports : ul tag 
+6. List your favorite people : ol tag 
+
+push it to github
+
+Create feedback branch 
+
+below task should be in feedback
+
+1. Create a form ( make sure every field starts on new line)
+    - User name (should have label , required)
+    - User email (should have label , required)
+    - User contact number (should have label)
+    - User date of birth (should have label)
+    - Married / un Married (should have label ,radio)
+    - Gender (should have label, radio)
+    - favorite Color (should have label, select) 
+    - Upload profile image
+    - Newsletter checkbox (should have label)
+    - Button to submit the form
+
+push it to github
+
+Creat contactme branch - copy of feedback branch
+below task should be in contactme 
+Links :
+    1. clickable image of linkedIn profile 
+    2. clickable image of instagram profile 
+    3. clickable image twitter profile
+

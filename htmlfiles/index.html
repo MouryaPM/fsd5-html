@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Elements</title>
+  </head>
+  <body>
+    <!--comments goes here-->
+    <!--Heading tags
+    paired tag :
+    1 - 6
+    <h1></h1>
+    -->
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h6>This is heading 6</h6>
+    <!-- paragraph
+    paired tag
+    <p></p>
+    lorem10
+    -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui laboriosam
+      ea maiores ipsa ullam voluptates commodi illum sunt velit reiciendis.
+    </p>
+    <!-- image 
+    https://placekitten.com/200/300
+    signle tag 
+    <img ...../>
+    src - source of image
+    -->
+    <img src="https://placekitten.com/200/300" alt="picture of cat" />
+
+    <!-- Anchor tags
+    paired tag
+    <a>....</a>
+    Links:
+    -->
+    <br />
+    <br />
+    <!-- by default : _self , _blank-->
+    <a href="https://www.google.com" target="_self">Visit Google</a>
+    <!-- <a href="https://support.zerodha.com/">Visit support</a> -->
+    <br />
+    <p>
+      this para has link to
+      <a href="https://google.com" target="_blank"> Google</a>
+    </p>
+
+    <a href="https://placekitten.com/200/300" target="_blank">
+      <img
+        src="https://placekitten.com/200/300"
+        alt="images"
+        width="100"
+        height="100"
+      />
+    </a>
+    <!-- local image
+    in same foler
+    -->
+    <!-- html/test.png  -->
+    <!-- html/index.html  -->
+    <img src="test.png" alt="another image" />
+    <br />
+    <!--  new folder -->
+    <!-- html/index.html  -->
+    <!-- html/images/test.png -->
+    <img src="images/test.png" alt="another image" />
+    <br />
+    <!-- html/hrmlfiles/abc/index.html - ../../images/test.png -->
+    <!-- html/images/test.png  -->
+    <img src="../images/test.png" alt="" />
+    <br />
+    <h3>Simple</h3>
+    <ul>
+      <li>Books</li>
+      <li>Caps</li>
+      <li>Pens</li>
+    </ul>
+    <h3>Ordered</h3>
+    <ol>
+      <li>Movies</li>
+      <li>Themes</li>
+      <li>Parks</li>
+    </ol>
+    <br />
+    <form action="/submit-data">
+      <!-- every element in form  should have name attribute 
+      http://127.0.0.1:5500/submit-data?
+      username=pooja
+      &
+      age=10
+      &
+      gender=on
+
+
+      http://127.0.0.1:5500/submit-data?
+      username=a&
+      age=2&
+      gender=female
+
+
+
+      http://127.0.0.1:5500/submit-data?
+      
+      username=pooja&
+      age=10&
+      date=2022-08-24
+      &email=pooja%40mail.com
+      &gender=female
+      &mews=on
+      &review=new+data
+      &singleColor=green
+
+      &multiColor=white
+      &multiColor=yellow
+      &multiColor=blue
+
+
+      username=abc
+      
+      http://127.0.0.1:5500/submit-data?
+      username=abc&
+      username=10
+      &date=&email=pooja.mourya%40aurelia.tech&gender=male&review=&singleColor=red&multiColor=white
+      -->
+      <label>Name</label>
+      <input type="text" placeholder="text data" required name="username" />
+      <br /><br />
+      <label>Age</label>
+      <input type="number" placeholder="age" name="age" />
+      <br />
+      <br />
+      <label>Favorite Color</label>
+      <input type="color" />
+      <br />
+      <br />
+      <label>Date of birth</label>
+      <input type="date" name="date" />
+      <br />
+      <br />
+      <label>Email</label>
+      <input type="email" placeholder="email" required name="email" />
+      <br />
+      <br />
+      <label>Password</label>
+      <input type="password" placeholder="Your password" readonly />
+      <br />
+      <br />
+      <label>Profile photo</label>
+      <input type="file" />
+      <br />
+      <br />
+      <!-- type = submit , type=button       -->
+
+      <!-- radio buttons -->
+      <label>
+        <input type="radio" name="gender" checked value="male" />Male
+      </label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label>
+      <br />
+      <br />
+      <!-- checkbox
+      checked - default selection
+      for - link to input
+      id= to link to label
+      -->
+      <label for="remember">Remember me</label>
+      <input type="checkbox" id="remember" checked value="remember" />
+      <label for="news">Newsletter</label>
+      <input type="checkbox" id="news" name="mews" />
+      <label><input type="checkbox" /> Select</label>
+      <br />
+      <br />
+      <!-- textarea 
+        comments/ feedback
+        rows: specify how many lines
+        cols - how many character/alphabets in one line
+        maxlength = max characters
+        -->
+      <label> Review</label>
+      <textarea rows="5" cols="50" maxlength="10" name="review"></textarea>
+      <br />
+      <br />
+      <!-- dropdown / select box -->
+      <select name="singleColor">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="color">Black</option>
+      </select>
+      <br />
+      <br />
+      <!-- multiple - to select multiple option 
+      windows : ctrl + click
+      mac: shift + click
+
+      -->
+      <select multiple name="multiColor">
+        <option value="purple">Purple</option>
+        <option value="white">White</option>
+        <option value="yellow">Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="greeen">Green</option>
+      </select>
+
+      <br />
+      <br />
+      <button type="submit">Submit Form</button>
+      <!-- month ,datetime-local ,image , search , weeks , hidden -->
+    </form>
+
+    <br />
+  </body>
+</html>
