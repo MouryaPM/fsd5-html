@@ -34,11 +34,21 @@ comments - <!--  .......... -->
     - anchor - a 
     - break line - br
     - list 
-        - un-ordered list  - ul
-        - ordered list     - ol
+        - un-ordered list  - ul li
+        - ordered list     - ol li
     - form 
+            -action =where to post data 
+            - input 
+            - label
+            - button 
+            - checkbox 
+            - radio 
+            - textarea
+            - dropdown / select 
 
-
+- audio / video 
+- table 
+- semantics
 
 
 Assignment 1:
@@ -82,3 +92,8 @@ Links :
     2. clickable image of instagram profile 
     3. clickable image twitter profile
 
+Assignment 2:
+This is mater branch 
+1.Create billing table
+2.Add caption billing
+3.

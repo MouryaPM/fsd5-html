@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio video</title>
+    <style>
+      audio {
+        margin-top: 100px;
+      }
+      video {
+        width: 500px;
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Audio mp3 ,wav ,ogg -->
+    <audio src="../audio.mp3" type="audio/mpeg" controls></audio>
+    <!-- loop -->
+    <audio src="../audio.mp3" type="audio/mpeg" controls loop></audio>
+    <!-- muted -->
+    <audio src="../audio.mp3" type="audio/mpeg" controls muted></audio>
+    <!-- autoplay -->
+    <!-- <audio src="../audio.mp3" type="audio/mpeg" controls autoplay></audio> -->
+
+    <!-- iframe -->
+    <!-- mp4,webM,ogg -->
+    <br />
+    <video controls>
+      <source src="../video.mp4" type="video/mp4" />
+    </video>
+    <!-- loop -->
+    <video controls loop>
+      <source src="../video.mp4" type="video/mp4" />
+    </video>
+    <!-- muted -->
+    <video controls muted>
+      <source src="../video.mp4" type="video/mp4" />
+    </video>
+    <!-- autoplay -->
+    <!-- <video controls autoplay>
+      <source src="../video.mp4" type="video/mp4" />
+    </video> -->
+    <!-- poster -->
+    <video controls poster="../images/test.png">
+      <source src="../video.mp4" type="video/mp4" />
+    </video>
+  </body>
+</html>
